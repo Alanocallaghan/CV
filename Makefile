@@ -1,8 +1,14 @@
-cv: AOC_cv.tex 
-	xelatex AOC_cv.tex
+COVER=$(wildcard cover_*.tex)
+CV=$(wildcard cv_*.tex)
 
-cover: cover_letter.tex
-	xelatex cover_letter.tex
+%.pdf:
+	xelatex %.tex
+
+cv: $(CV)
+	$(foreach i, $^, xelatex -output-directory="pdfs/" $i;)
+
+cover: $(COVER)
+	$(foreach i,$^, xelatex -output-directory="pdfs/" $i;)
 
 clean:
-	rm *.log *.out  *.aux
+	rm -r pdfs/*.log pdfs/*.out  pdfs/*.aux
