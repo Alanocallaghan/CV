@@ -1,5 +1,5 @@
 COVER=$(wildcard cover_*.tex)
-CV=$(wildcard cv_*.tex)
+CV=$(wildcard cv*.tex)
 
 %.pdf:
 	xelatex %.tex
