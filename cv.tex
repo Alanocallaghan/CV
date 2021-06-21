@@ -26,6 +26,12 @@
 
 \documentclass[11pt, a4paper]{awesome-cv} % A4 paper size by default, use 'letterpaper' for US letter
 
+\definecolor{dodgerblue}{rgb}{0.117, 0.564, 1}
+\definecolor{firebrick}{rgb}{0.698, 0.133, 0.133}
+
+
+\hypersetup{colorlinks, urlcolor=awesome-skyblue}
+
 \geometry{left=2cm, top=1.5cm, right=2cm, bottom=2cm, footskip=.5cm} % Configure page margins with geometry
 
 \fontdir[fonts/] % Specify the location of the included fonts
@@ -56,10 +62,11 @@
 \github{Alanocallaghan}
 % \linkedin{alan-o-callaghan-b95864108}
 %\skype{skypeid}
+\googlescholar{n2Q4KxsAAAAJ}{Alan O'Callaghan}
 \stackoverflow{4747043}{alanocallaghan}
-\twitter{@AlanBOcallaghan}
+% \twitter{@AlanBOCallaghan}
 
-\position{Bioinformatician{\enskip\cdotp\enskip}Developer} % Your expertise/fields
+\position{Bioinformatics{\enskip\cdotp\enskip}Software{\enskip\cdotp\enskip}Data science} % Your expertise/fields
 % \quote{``Make the change that you want to see in the world."} % A quote or statement
 
 \makecvfooter{\today}{Alan O'Callaghan~~~·~~~CV}{\thepage} % Specify the letter footer with 3 arguments: (<left>, <center>, <right>), leave any of these blank if they are not needed
@@ -81,8 +88,9 @@
 % \input{cv-sections/experience.tex}
 % \newpage
 \input{cv-sections/writing.tex}
-\input{cv-sections/presentation.tex}
+\input{cv-sections/teaching.tex}
 \input{cv-sections/conferences.tex}
+\input{cv-sections/software.tex}
 \input{cv-sections/extracurricular.tex}
 \input{cv-sections/honors.tex}
 % \input{cv-sections/hobbies.tex}
